@@ -1,0 +1,245 @@
+body {
+    margin-top: 0px;
+    background-color: #9ed1e9;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#main-header {
+    background-color: #061B25;
+    height: 20rem;
+    margin: 0 5rem;
+}
+
+.container {
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+h1 {
+    color: aliceblue;
+    margin: auto;
+    align-content: center;
+    padding-top: 120px;
+    padding-bottom: 23px;
+}
+
+form {
+    margin: auto;
+    width: 25rem;
+    justify-content: space-between;
+    display:flex
+}
+
+input {
+    font-size: larger;
+    margin-bottom: 12px;
+    padding: 12px;
+    border: 0px;
+    /* background-color: #17252f; */
+    color: #abaeb4;
+    /* border-radius: 9px; */
+}
+
+.container form button {
+    font-size: larger;
+    margin-bottom: 12px;
+    padding: 12px;
+    border: 0px;
+    background-color: #d12a2a;
+    color: #abc5ef;
+    border-radius: 9px;
+}
+
+
+/* .container2 {
+  width: 40rem;
+  margin: auto;
+  text-align: center;
+} */
+
+ul {
+    list-style-type: none;
+}
+
+.stats{
+    margin-top: 10px auto;
+    font-size: 1.2rem;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    color: white;
+}
+
+
+.stats .list-1{
+    background-color: #aabd1b;
+    width:fit-content;
+    border-radius: 4px;
+    display: flex;
+    padding: 0px 0px 0px 10px;
+    justify-content: space-around;
+    background-color: #17252f;
+    margin-right: 5px;
+}
+
+.list-1 #remaining-tasks{
+    background-color: rgb(152, 187, 10);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding:3px 10px 0px 10px;
+    margin-left: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.stats .list-2{
+    background-color: #aabd1b;
+    width:fit-content;
+    border-radius: 4px;
+    display: flex;
+    padding: 0px 0px 0px 10px;
+    justify-content: space-around;
+    background-color: #17252f;
+    margin-right: 5px;
+}
+
+.list-2 #completed-tasks{
+    background-color: rgb(152, 187, 10);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding:3px 10px 0px 10px;
+    margin-left: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.stats .list-3{
+    background-color: #aabd1b;
+    width:fit-content;
+    border-radius: 4px;
+    display: flex;
+    padding: 0px 0px 0px 10px;
+    justify-content: space-around;
+    background-color: #17252f;
+    margin-right: 5px;
+}
+
+.list-3 #total-tasks{
+    background-color: rgb(152, 187, 10);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding:3px 10px 0px 10px;
+    margin-left: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.todos {
+    padding: 0 7rem;
+    align-items: center;
+}
+
+.todos li {
+    /* border: 1px solid black; */
+    padding: .5rem;
+    background-color: rgb(246, 246, 248);
+    display: flex;
+    font-size: larger;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+ }
+
+ .todos li div {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+ }
+
+ .todos li.complete span {
+    background-color: #fffffe;
+    text-decoration: line-through;
+ } 
+
+ input[type='checkbox']{
+    appearance: none;
+    margin: 0 7px;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-color: transparent;
+    width: 1rem;
+    height: 1rem;
+    display: grid;
+    place-content: center;    
+}
+
+input[type='checkbox']::before{  
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z'/%3E%3C/svg%3E");
+    transform: scale(0);
+    transition: all .2s ease-in-out;
+}
+
+input[type='checkbox']:checked {
+    /* background-color: #144ec2; */
+    border-color: #fffffe;
+    
+}
+
+input[type='checkbox']:checked::before{
+    transform: scale(1);
+    padding: 0.25rem;
+}
+
+.todos li button {
+    border: 0px;
+    background-color: transparent;
+    padding: 0.29rem;
+    display: grid;
+    place-content: center;
+}
+
+.todos li button svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.todos li button:hover svg path{
+    stroke: black
+}
+
+.todos li button:active svg {
+    transform: scale(.7);
+}
+
+.todos li span {
+    padding: 2px;
+    border-radius: 6px;
+    transition: all .2s ease-in-out;
+}
+
+.todos li span:focus {
+    background-color: #9ed1e9;
+    outline: none;
+}
+.todos li span[contenteditable]:hover {
+    background-color: #9ed1e9;
+}
+
+
+    /* @media screen and (min-width:768px){
+    .container{
+        margin: 0 auto;
+        position: relative'
+    }
+
+    #todo-form {
+        flex-direction: row;
+    }
+
+    #todo-form input {
+        flex-grow: 1;
+    }
+} */
